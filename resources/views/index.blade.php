@@ -3,7 +3,8 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 		<title>Front End Developer Test</title>
-		<link rel="stylesheet" type="text/css" href="#">
+		<link rel="stylesheet" type="text/css" href=" {{ asset('/css/bootstrap.min.css') }} ">
+		<link rel="stylesheet" type="text/css" href=" {{ asset('/css/stylesheets.css') }} ">
 		<style type="text/css">.fancybox-margin{margin-right:0px;}</style>
 	</head>
 	<body>
@@ -11,14 +12,14 @@
 	<div id="ErrorMessageBox"></div>
 	<!-- End Error Box -->
 	<div class="titlebar" style="margin-bottom:10px;">{Customer Name Here}</div>
-	<div style="padding:10px;">
+	<div class="form_container">
 		<form name="form1" method="post" action="" autocomplete="off" enctype="multipart/form-data">
 			<div class="panel iPadCSS" id="panel1" style="display: block">
-				<table width="1100" border="0" cellpadding="0" cellspacing="0">
+				<table class="menu" border="0" cellpadding="0" cellspacing="0">
 					<tbody>
 						<tr>
 							<td width="10">&nbsp;</td>
-							<td valign="bottom">
+							<td class="nav_contents_wrap" valign="bottom">
 								<a href="#" id="tab1" class="TabOn">Overview</a>
 								<a href="#" id="tab8" class="Tab">Statement</a>
 								<a href="#" id="tab2" class="Tab">Agents Fee</a>
@@ -82,7 +83,7 @@
 											<tr>
 												<td colspan="2"><font face="Verdana, Arial, Helvetica, sans-serif" color="#000000" size="1">
 													<div id="UserManagement"><center><a href="#" class="linkedaccounts">View/Modify/Delete Linked Accounts</a></center></div>
-												</font></td>
+												</font><br></td>
 											</tr>
 											<tr>
 												<td align="right">Company Name</td>
@@ -311,7 +312,7 @@
 												<td><input name="Mobile" id="Mobile" value="" size="45"></td>
 											</tr>
 											<tr>
-												<td align="right" valign="top" style="vertical-align:top;"><a href="mailto:">Email Address</a></td>
+												<td align="right" valign="top" style="vertical-align:top;">Email Address</td>
 												<td><textarea name="Email" cols="55" rows="3" id="Email"></textarea></td>
 											</tr>
 											<tr>
@@ -324,7 +325,7 @@
 											</tr>
 											<tr>
 												<td align="right" valign="top" style="vertical-align:top;">Notes</td>
-												<td><a href="#" class="addnotelink">Add Note</a></td>
+												<td class="pad10_left"><a href="#" class="addnotelink">Add Note</a></td>
 											</tr>
 											<tr>
 												<td></td>
@@ -349,7 +350,7 @@
 													<input name="autoSearchId" type="hidden" id="autoSearchId" value="247">
 													<input name="GoHome" type="hidden" id="GoHome" value="{GoHome}">
 												</td>
-												<td><button type="submit" name="Save" class="submit_btn">Save profile</button></td>
+												<td><button type="submit" name="Save" class="submit_btn btn btn-primary">Save profile</button></td>
 											</tr>
 										</tbody>
 									</table>
@@ -633,7 +634,7 @@
 									    						</select>
 									    						<div id="paymentduemessage" style="background-color:red;display:inline;color:#FFFFFF"></div></td></tr>
 									    						<tr>
-									    							<td colspan="2"><a href="#" class="paymentduelink">Update Current Shipments</a></td>
+									    							<td colspan="2" class="pad10_left"><a href="#" class="paymentduelink">Update Current Shipments</a></td>
 									    						</tr>
 									    					</tbody>
 									    				</table>
@@ -716,7 +717,7 @@
           </tr>
         <tr>
           <td align="right" valign="top" style="vertical-align:top;">Special Instructions</td>
-          <td><a href="#" class="addmr2aspecialinstructionnotelink">Add MR2A Special Instruction Note</a><br>
+          <td class="pad10_left"><a href="#" class="addmr2aspecialinstructionnotelink">Add MR2A Special Instruction Note</a><br>
           <br>
           <div id="mr2a_notes"></div>
           </td>
@@ -761,7 +762,7 @@
 
         <tr>
           <td align="right" valign="top" style="vertical-align:top;">Payment / Credit Terms</td>
-          <td><a href="#" class="addpaymentcredittermsnotelink">Add Payment / Credit Term Note</a><br>
+          <td class="pad10_left"><a href="#" class="addpaymentcredittermsnotelink">Add Payment / Credit Term Note</a><br>
           	<br>
           	<div id="paymentcreditterms_notes"></div>
           </td>

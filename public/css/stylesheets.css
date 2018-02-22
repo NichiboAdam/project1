@@ -1,0 +1,18 @@
+body {background:#000}
+
+/*Menu Section*/
+.menu {width: 100%; padding:20px 0; display: block; text-align: center;}
+td.nav_contents_wrap {width: 100%; background-color: red; padding: 20px 0;}
+.nav_contents_wrap a {padding: 0 20px; color: #fff}
+/*END Menu Section*/
+
+/*Main Form Container*/
+div.form_container {padding: 0; width: 80%; max-width: 80%; display: block; margin: 0 auto;}
+.PanelNew {padding: 40px 20px}
+.PanelNew input, .PanelNew select, .PanelNew textarea {margin: 0 0 10px 10px; padding: 3px; resize: none}
+.pad10_left {padding-left: 10px}
+/*END Main Form Container*/
+
+/*Copyright Bar*/
+.copybar {color: #fff;text-align: center;padding: 0 0 20px;}
+/*END Copyright Bar*/
