@@ -1,0 +1,60 @@
+body{
+	background: #e÷ee;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: 200;
+	padding-top: 100px
+	}
+	a.Tab{
+		display: inline-block;
+		padding: 5px;
+		border: 1px solid orange;
+		border-radius: 2px;
+		font-size: 12px;
+		&:hover{
+			background: orange;
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+	a.TabOn{
+				display: inline-block;
+		padding: 5px;
+		border: 1px solid orange;
+		border-radius: 2px;
+		background: orange;
+		color: #fff;
+		font-size: 12px;
+	}
+	form{
+		label{
+		padding-right: 10px;
+		}
+		& input[type], textarea{
+			broder: 1px solid #ccc;
+			padding: 10px;
+			&:focus{
+				border: 1px solid #ccc;
+				box-shadow: none;
+			}
+		}
+		& input[type=checkbox]{
+			margin: 10px;
+		}
+		select{
+			padding: 10px;
+			display: inline-block;
+			height: 30px;
+		}
+	}
+table{
+	td{
+		padding: 5px 10px;
+	}
+	button{
+		border: 1px solid orange;
+		border-radius: 2px;
+		background: orange;
+		color: #fff;
+	}
+}
